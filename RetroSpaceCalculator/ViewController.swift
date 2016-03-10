@@ -69,6 +69,15 @@ class ViewController: UIViewController {
         processOperations(currentOperation)
     }
     
+    
+    @IBAction func onClearPressed(sender: AnyObject) {
+        rightValStr = ""
+        leftValStr = ""
+        runningNumber = ""
+        currentOperation = Operation.Empty
+        outputLabel.text = "0.0"
+    }
+    
     // MARK:  Functions
     
     func processOperations(op: Operation) {
